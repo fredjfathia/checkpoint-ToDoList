@@ -1,38 +1,55 @@
 .App {
   text-align: center;
+  
+ }
+.image{
+background-image: url("https://mangebrilleaime.com/wp-content/uploads/2016/02/ASALINE_calendrier-janvier-2016-%C3%A0-imprimer-gratuit_printable_free-to-do-list-liste-600x450.jpg");
+background-size: 50% auto;
+}
+input {
+  width: 300px;
+  height: 30px;
+}
+.btn-2 {
+  width: 100px;
+  background-color: rgb(0, 204, 255);
+  height: 33px;
+  font-size: 14px;
+ }
+.btn-2:hover{
+  font-size: larger;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  width: 80%;
+  text-align: left;
+  margin-left: 10%;
+  margin-right:10%;
+  table-layout: fixed;
+  
+}
+td {
+border-bottom: 1px solid #ddd;
+width:100px;
+height: 40px;
+}
+.CH1{
+  background-color:rgb(189, 212, 235) ;  
+}
+.CH2{
+  background-color:grey; 
+}
+.CH1:hover{
+  background-color:rgb(15, 218, 184) ;
+}
+.CH2:hover{
+  background-color:rgb(15, 218, 184) ;
+}
+.red:hover{
+color: red;
+}
+.green:hover{
+color: green;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
