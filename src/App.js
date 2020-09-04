@@ -8,12 +8,13 @@ function App() {
   let d=new Date()
   const handleItem=(e)=>{
     setItem(e.target.value)
-  
   }
   //.toDateString()
   const handleTodo=(e)=>{
     
    setTodos([...todos,{id:Math.random(),item:item,time:time,date:d.toLocaleDateString()}]);
+   setItem(" ")
+   
  }
   const removeItem=(x)=>{
    setTodos(todos.filter(el=>el.id!==x))
@@ -31,7 +32,7 @@ setTodos(todos.map(el=>(el.id===x)?{id:x,item:y,time:z.time,date:z.date}:el))
       <br></br>
       <br></br>
       <div >
-      <input placeholder="task" type="text" onChange={(e)=>handleItem(e)}/>
+      <input placeholder="task" type="text" value={item}onChange={(e)=>handleItem(e)}/>
       <input type="date" onChange={(e)=>setTime(e.target.value)}/>
       <button className="btn-2" onClick={handleTodo}>Add Item</button>
       

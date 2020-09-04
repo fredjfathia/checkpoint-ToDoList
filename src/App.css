@@ -2,9 +2,11 @@
   text-align: center;
   
  }
-.image{
+body{
 background-image: url("https://mangebrilleaime.com/wp-content/uploads/2016/02/ASALINE_calendrier-janvier-2016-%C3%A0-imprimer-gratuit_printable_free-to-do-list-liste-600x450.jpg");
-background-size: 50% auto;
+background-size: cover;
+background-repeat: no-repeat;
+
 }
 input {
   width: 300px;
